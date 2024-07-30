@@ -4,7 +4,7 @@ export interface Options {
     headers?: HttpHeaders | {
         [header: string]: string | string[];
     };
-    observe: 'body';
+    observe?: 'body';
     context?: HttpContext;
     params?: HttpParams | {
         [param: string]: string | number | boolean | ReadonlyArray<string | number | boolean>;
