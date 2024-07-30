@@ -16,3 +16,11 @@ export interface Options {
         includeHeaders?: string[];
     } | boolean;
 }
+
+export interface Product {
+
+}
+
+export interface PaginationParams {
+    
+}
