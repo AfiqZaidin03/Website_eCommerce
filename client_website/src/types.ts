@@ -18,9 +18,21 @@ export interface Options {
 }
 
 export interface Product {
-
+    items: Product[];
+    total: number;
+    page: number;
+    perPage: number;
+    totalPages: number;
 }
 
+export interface Product {
+    price: string;
+    name: string;
+    image: string;
+    rating: number;
+  }
+
 export interface PaginationParams {
-    
+    page: number;
+    perPage: number;
 }
