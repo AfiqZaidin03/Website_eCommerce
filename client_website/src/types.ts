@@ -17,7 +17,7 @@ export interface Options {
     } | boolean;
 }
 
-export interface Product {
+export interface Products {
     items: Product[];
     total: number;
     page: number;
@@ -33,6 +33,7 @@ export interface Product {
   }
 
 export interface PaginationParams {
+    [param: string]: string | number | boolean | ReadonlyArray<string | number | boolean>;
     page: number;
     perPage: number;
 }
